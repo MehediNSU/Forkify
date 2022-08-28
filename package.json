@@ -1,0 +1,23 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "scripts": {
+    "start": "parcel index.html",
+    "buil": "parcel build index.html"
+  },
+  "author": "Md. Mehedi Hasan",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "core-js": "^3.24.1",
+    "fractional": "^1.0.0",
+    "fracty": "^1.0.11",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
