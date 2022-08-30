@@ -1,7 +1,6 @@
 //import icons from '../img/icons.svg'; //percel 1
 import icons from 'url:../../img/icons.svg'; //percel 2
 import { Fraction } from 'fractional';
-//import { fracty } from 'fracty';
 console.log(Fraction);
 export class RecipeView {
   #parentElement = document.querySelector('.recipe');
@@ -27,6 +26,10 @@ export class RecipeView {
 
   #clear() {
     this.#parentElement.innerHTML = '';
+  }
+
+  addHandlerRender(handler) {
+    ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
   }
 
   #generatemarkup() {
